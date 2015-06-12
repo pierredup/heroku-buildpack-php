@@ -250,10 +250,10 @@ if [[ "${PHP_VERSION}" ]]; then
     # special treatment for Blackfire; we enable it if we detect a server id and a server token for it
     install_blackfire_ext
 
-    if [[ ${#exts[@]} -eq 0 || ! ${exts[*]} =~ "zend-opcache" ]]; then
-        install_ext "zend-opcache" "automatic"
-        exts+=("zend-opcache")
-    fi
+    #if [[ ${#exts[@]} -eq 0 || ! ${exts[*]} =~ "zend-opcache" ]]; then
+        #install_ext "zend-opcache" "automatic"
+        #exts+=("zend-opcache")
+    #fi
 fi
 
 status "Installing dependencies..."
